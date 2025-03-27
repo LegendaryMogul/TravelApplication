@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PickACity">
+
+    <!-- City Name Input -->
+    <EditText
+        android:id="@+id/et_city_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter City Name"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"/>
+
+    <!-- Activities Label -->
+    <TextView
+        android:id="@+id/tv_activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activities"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/et_city_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Input for New Activity -->
+    <EditText
+        android:id="@+id/et_new_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Activity"
+        app:layout_constraintTop_toBottomOf="@id/tv_activities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"/>
+
+    <!-- Button to Add Activity -->
+    <Button
+        android:id="@+id/btn_add_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Activity"
+        app:layout_constraintTop_toBottomOf="@id/et_new_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- List of Activities -->
+    <ListView
+        android:id="@+id/lv_activities"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Prices Label -->
+    <TextView
+        android:id="@+id/tv_prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prices"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/lv_activities"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Input for New Price -->
+    <EditText
+        android:id="@+id/et_new_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        app:layout_constraintTop_toBottomOf="@id/tv_prices"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"/>
+
+    <!-- Button to Add Price -->
+    <Button
+        android:id="@+id/btn_add_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Price"
+        app:layout_constraintTop_toBottomOf="@id/et_new_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- List of Prices -->
+    <ListView
+        android:id="@+id/lv_prices"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Hotel Name Input -->
+    <EditText
+        android:id="@+id/et_hotel_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Hotel Name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/lv_prices"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
+
+    <!-- Book Button -->
+    <Button
+        android:id="@+id/btn_book"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        app:layout_constraintTop_toBottomOf="@id/et_hotel_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

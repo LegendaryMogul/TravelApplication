@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:id="@+id/header_africa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Africa"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <GridLayout
+        android:id="@+id/city_buttons_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        app:layout_constraintTop_toBottomOf="@id/header_africa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <Button
+            android:id="@+id/btn_cairo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cairo" />
+
+        <Button
+            android:id="@+id/btn_kenya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nairobi" />
+
+        <Button
+            android:id="@+id/btn_joao_pessoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="João Pessoa" />
+
+        <Button
+            android:id="@+id/btn_cape_town"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cape Town" />
+
+        <Button
+            android:id="@+id/btn_dakar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dakar" />
+
+        <Button
+            android:id="@+id/btn_lagos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lagos" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

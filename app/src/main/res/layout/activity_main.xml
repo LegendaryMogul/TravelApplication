@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore the World"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <GridLayout
+        android:id="@+id/button_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_africa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Africa"
+            android:onClick="onContinentClick" />
+
+        <Button
+            android:id="@+id/btn_asia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asia"
+            android:onClick="onContinentClick" />
+
+        <Button
+            android:id="@+id/btn_europe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Europe"
+            android:onClick="onContinentClick" />
+
+        <Button
+            android:id="@+id/btn_north_america"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="North America"
+            android:onClick="onContinentClick" />
+
+        <Button
+            android:id="@+id/btn_south_america"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="South America"
+            android:onClick="onContinentClick" />
+
+        <Button
+            android:id="@+id/btn_oceania"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oceania"
+            android:onClick="onContinentClick" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_talk_agent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Talk to a Travel Agent"
+        android:onClick="onTalkToAgentClick"
+        app:layout_constraintTop_toBottomOf="@id/button_grid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- New button to go to Pick a City page -->
+    <Button
+        android:id="@+id/btn_pick_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a City"
+        android:onClick="onPickCityClick"
+        app:layout_constraintTop_toBottomOf="@id/btn_talk_agent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

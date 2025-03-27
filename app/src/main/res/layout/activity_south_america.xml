@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@android:color/holo_orange_dark">
+
+    <TextView
+        android:id="@+id/header_south_america"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="South America"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <GridLayout
+        android:id="@+id/city_buttons_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        app:layout_constraintTop_toBottomOf="@id/header_south_america"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btn_rio_de_janeiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rio de Janeiro" />
+
+        <Button
+            android:id="@+id/btn_buenos_aires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buenos Aires" />
+
+        <Button
+            android:id="@+id/btn_lima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lima" />
+
+        <Button
+            android:id="@+id/btn_santiago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Santiago" />
+
+        <Button
+            android:id="@+id/btn_bogota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bogotá" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

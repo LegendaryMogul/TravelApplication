@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/header_oceania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oceania"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <GridLayout
+        android:id="@+id/city_buttons_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        app:layout_constraintTop_toBottomOf="@id/header_oceania"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btn_sydney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sydney" />
+
+        <Button
+            android:id="@+id/btn_auckland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auckland" />
+
+        <Button
+            android:id="@+id/btn_melbourne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Melbourne" />
+
+        <Button
+            android:id="@+id/btn_wellington"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wellington" />
+
+        <Button
+            android:id="@+id/btn_perth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perth" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
